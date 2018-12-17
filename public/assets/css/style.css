@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(255, 230, 0);
+    margin-top: 40px;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+header img {
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    color: rgb(255, 0, 0);
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#all-uneaten {
+    /* border: 1px solid black; */
+    width: 50%;
+    float: left;
+}
+
+
+#all-eaten {
+    /* border: 1px solid black; */
+    width: 50%;
+    float: right;
+}
+
+#all-uneaten, #all-eaten {
+    text-align: center;
+}
+
+#enter-burger {
+    margin-top: 40px;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+#all-burgers {
+    margin-bottom: 40px;
+}
+
+.each-burger {
+    border: 2px solid red;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    width: 250px;
+    padding: 15px 0 15px 0;
+
+}
+
+.devoured-0, .devoured-1 {
+    display: inline;
+}
+
+.devour-button {
+    display: inline;
+}
+
+#create {
+    padding: 5px 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

@@ -1,0 +1,28 @@
+<header>
+    <img src="/assets/img/burger.jpg" alt="Smiley face">
+    <h1>Eat-Da-Burger</h1>
+</header>
+<div id="all-burgers" class="clearfix">
+    <div id="all-uneaten">
+        <h2>Uneaten Burgers</h2>
+        {{#each burgerKinds}}
+        {{#unless devoured}}
+        {{> burgers/burger-box ate=false}}
+        {{/unless}}
+        {{/each}}
+    </div>
+    <div id="all-eaten">
+        <h2>Devoured Burgers</h2>
+        {{#each burgerKinds}}
+        {{#if devoured}}
+        {{> burgers/burger-box ate=true}}
+        {{/if}}
+        {{/each}}
+    </div>
+</div>
+
+    <form id="enter-burger">
+        <input id="create" type="text" name="firstname" />
+        <br>
+        <input type="submit" value="Submit"/>
+    </form>
