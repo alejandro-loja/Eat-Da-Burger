@@ -4,15 +4,21 @@ Welcome! - The following Application makes use of Handlebars.js, Express.js, and
 
 ## How the App Works:
 1. Enter a name for a burger and hit submit.
-2. The burger automatically is added to the uneaten side.
-3. If you choose to click on the devour button, the burger will be devoured".
-4. You will see the burger change over to the "Devoured" section.
-5. You can come up with many ideas for your burgers. 
+2. The burger automatically is added onto the uneaten side.
+3. If you choose to click on the devour button, the burger will be "devoured".
+5. Because MySQL is used the "burgers" are stored in a database. The burgers' status and information will remain even if you reload the page.
 
 The "burgers" are kept track with MySQL Database.
-Handlebars is used and a logic test decides whether the burger is devoured or not. 
+Handlebars is used and a true or false checker decides what how the information is displayed. The example below will be for "devoured" burgers.
 
-Uses the Model View Controller (MVC) architechture.
+```handlebars
+        {{#if devoured}}
+        {{> burgers/burger-box ate=true }}
+        {{/if}}
+```
+
+
+Uses the Model View Controller (MVC) architecture.
 
 
 ### Heroku Page:  [Eat-Da-Burger!](https://polar-oasis-24673.herokuapp.com/)

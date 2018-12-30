@@ -4,8 +4,10 @@ var burger = require("../models/burger.js");
 
 var router = express.Router();
 
-console.log("--");
+console.log("------");
 
+
+// homepage
 router.get("/", function (req, res) {
   burger.all(function (data) {
     var hasBurgers = {
@@ -16,6 +18,7 @@ router.get("/", function (req, res) {
   });
 });
 
+// adds burger
 router.post("/api/burgers", function (req, res) {
   burger.create([
     "burgers", "devoured"
@@ -27,6 +30,7 @@ router.post("/api/burgers", function (req, res) {
     });
 });
 
+//
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 

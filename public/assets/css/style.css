@@ -9,12 +9,17 @@ header {
 }
 
 header img {
-    width: 50%;
-    height: 50%;
+    width: 250px;
+    height: 200px;
+    border-radius: 15%;
+    -webkit-filter: saturate(1);
+    filter: saturate(1);
 }
 
 h1 {
     color: rgb(255, 0, 0);
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -50,6 +55,7 @@ h2 {
 
 .each-burger {
     border: 2px solid red;
+    border-radius: 5%;
     margin: 0 auto;
     margin-bottom: 2px;
     width: 250px;
@@ -57,13 +63,26 @@ h2 {
 
 }
 
+.ate-burger {
+    background-color: rgb(164, 164, 164);
+    border: 0px;
+    color: rgb(194, 194, 194);
+}
+
 .devoured-0, .devoured-1 {
     display: inline;
 }
 
 .devour-button {
-    display: inline;
-}
+    background-color: rgb(157, 0, 0); /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    }
 
 #create {
     padding: 5px 10px;
@@ -73,4 +92,9 @@ h2 {
     content: "";
     clear: both;
     display: table;
+  }
+
+  .devour-button:hover {
+        background-color: red; /* Green */
+        color: white;
   }

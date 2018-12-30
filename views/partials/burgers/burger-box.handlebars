@@ -1,4 +1,4 @@
-<div class="each-burger clearfix">
+<div class="each-burger {{#if ate}}ate-burger{{/if}} clearfix">
     <p class="devoured-{{devoured}}" data-id="{{id}}" value="{{devoured}}">{{id}}. {{burgers}}</p>
     {{#unless ate}}
     <button class="devour-button" data-id="{{id}}" data-devour="true">
