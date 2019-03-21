@@ -1,4 +1,5 @@
 # Eat-Da-Burger: Burger App
+## Heroku Page:  [Eat-Da-Burger!](https://polar-oasis-24673.herokuapp.com/)
 
 Welcome! - The following Application makes use of Handlebars.js, Express.js, and MySQL.
 
@@ -20,7 +21,7 @@ Handlebars is used and a true or false checker decides what how the information 
 
 Uses the Model View Controller (MVC) architecture.
 
+![Image of Deployed Website - Eat-Da-Burger](/rm_eat_da_burger.png)
 
-### Heroku Page:  [Eat-Da-Burger!](https://polar-oasis-24673.herokuapp.com/)
 
 
