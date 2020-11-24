@@ -1,6 +1,7 @@
 console.log('burger logic connected');
 
 $(function () {
+  
     $(".devour-button").on("click", function (event) {
         var id = $(this).data("id");
         console.log(id);
